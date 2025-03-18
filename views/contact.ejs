@@ -1,0 +1,183 @@
+<% include('./partials/header') %>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+    theme: {
+    extend: {
+        colors: {
+        navy: '#293462', // Your specified text/accent color
+        inputbg: '#f5f5f5', // Light gray for inputs
+    }
+    }
+    },
+    variants: {},
+    plugins: [],
+}
+</script>
+
+<body class="main w-full h-screen bg-white font-sans text-[#293462]">
+    <body class="bg-gray-50">
+
+        <header class="fixed top-0 right-0 h-screen flex items-center z-50">
+            <nav class="bg-white shadow-lg rounded-l-lg py-8 px-4 flex flex-col space-y-10">
+              <!-- About -->
+              <div class="group relative flex items-center justify-center">
+                <a href="/" class="text-gray-600 hover:text-blue-600 w-10 h-10 flex items-center justify-center text-xl transition-all duration-300">
+                  <i class="fas fa-user"></i>
+                </a>
+                <span class="absolute right-full mr-3 bg-white text-gray-800 font-medium px-3 py-1 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none">
+                  About Me
+                </span>
+              </div>
+              
+              <!-- Resume -->
+              <div class="group relative flex items-center justify-center">
+                <a href="/resume" class="text-gray-600 hover:text-blue-600 w-10 h-10 flex items-center justify-center text-xl transition-all duration-300">
+                  <i class="fas fa-file-alt"></i>
+                </a>
+                <span class="absolute right-full mr-3 bg-white text-gray-800 font-medium px-3 py-1 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none">
+                  Resume
+                </span>
+              </div>
+              
+              <!-- Portfolio -->
+              <div class="group relative flex items-center justify-center">
+                <a href="/projects" class="text-gray-600 hover:text-blue-600 w-10 h-10 flex items-center justify-center text-xl transition-all duration-300">
+                  <i class="fas fa-briefcase"></i>
+                </a>
+                <span class="absolute right-full mr-3 bg-white text-gray-800 font-medium px-3 py-1 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none">
+                  Projects
+                </span>
+              </div>
+              
+              <!-- Certificate -->
+              <div class="group relative flex items-center justify-center">
+                <a href="/certificates" class="text-gray-600 w-10 h-10 flex items-center justify-center text-xl transition-all duration-300">
+                  <i class="fas fa-certificate"></i>
+                </a>
+                <span class="absolute right-full mr-3 bg-white text-blue-600 font-medium px-3 py-1 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none">
+                  Certificates
+                </span>
+              </div>
+              
+              <!-- Contact -->
+              <div class="group relative flex items-center justify-center">
+                <a href="/contact" class="text-blue-600 hover:text-blue-600 w-10 h-10 flex items-center justify-center text-xl transition-all duration-300">
+                  <i class="fas fa-envelope"></i>
+                </a>
+                <span class="absolute right-full mr-3 bg-white text-blue-600 font-medium px-3 py-1 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none">
+                  Contact
+                </span>
+              </div>
+            </nav>
+          </header>
+        
+        <div class="heading w-full h-[100px] text-[#293462] flex items-center justify-center border-[1px] border-gray-300">
+            <h1 class="text-3xl font-semibold tracking-wide">CONTACT</h1>
+        </div>
+
+        <!-- Map Container -->
+        <div class="relative w-full h-96 bg-white mb-8 overflow-hidden shadow-md rounded max-w-6xl mx-auto px-4 py-3">
+            <!-- Map with Ludhiana location -->
+            <div id="map" class="w-full h-full">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109552.19658822962!2d75.7882486954403!3d30.900331040312337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a837462345a7d%3A0x681102348ec60610!2sLudhiana%2C%20Punjab!5e0!3m2!1sen!2sin!4v1710691172015!5m2!1sen!2sin" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            
+            <!-- Map Overlay -->
+            <div class="absolute top-5 left-5 bg-white bg-opacity-90 p-4 rounded shadow-md">
+                <h3 class="font-bold text-navy">Ludhiana</h3>
+                <p class="text-navy opacity-70">Punjab</p>
+            </div>
+            
+            <!-- Direction Button -->
+            <div class="absolute bottom-5 left-5 bg-white bg-opacity-90 p-2 rounded shadow-md cursor-pointer hover:bg-opacity-100">
+                <a href="https://www.google.com/maps/dir//Ludhiana,+Punjab/@30.9003396,75.7882487,12z/data=!4m9!4m8!1m0!1m5!1m1!1s0x391a837462345a7d:0x681102348ec60610!2m2!1d75.8572758!2d30.900965!3e0" target="_blank" class="text-sm text-navy">Directions</a>
+            </div>
+            
+            <!-- View Larger Map Button -->
+            <div class="absolute bottom-5 left-32 bg-white bg-opacity-90 p-2 rounded shadow-md cursor-pointer hover:bg-opacity-100">
+                <a href="https://www.google.com/maps/place/Ludhiana,+Punjab/@30.9003396,75.7882487,12z/data=!4m6!3m5!1s0x391a837462345a7d:0x681102348ec60610!8m2!3d30.900965!4d75.8572758!16zL20vMDIzOWtz" target="_blank" class="text-sm text-navy">View larger map</a>
+            </div>
+        </div>       
+
+        <div class="contact-form max-w-6xl mx-auto px-4 py-3">
+        <!-- Contact Form Section -->
+        <h2 class="text-2xl font-sans font-semibold mb-6 text-navy">CONTACT FORM</h2>
+        <form action="/submit-form" method="POST" class="w-full">
+            <div class="flex flex-col md:flex-row gap-6 mb-6">
+                <!-- Name Input -->
+                <div class="w-full md:w-1/2">
+                    <input 
+                        type="text" 
+                        name="fullname" 
+                        placeholder="Full name" 
+                        class="w-full p-4 bg-inputbg rounded border border-gray-200 focus:outline-none focus:border-navy text-navy"
+                        required
+                    >
+                </div>
+                
+                <!-- Email Input -->
+                <div class="w-full md:w-1/2">
+                    <input 
+                        type="email" 
+                        name="email" 
+                        placeholder="Email address" 
+                        class="w-full p-4 bg-inputbg rounded border border-gray-200 focus:outline-none focus:border-navy text-navy"
+                        required
+                    >
+                </div>
+            </div>
+            
+            <!-- Message Textarea -->
+            <div class="mb-6">
+                <textarea 
+                    name="message" 
+                    placeholder="Your Message" 
+                    rows="6" 
+                    class="w-full p-4 bg-inputbg rounded border border-gray-200 focus:outline-none focus:border-navy text-navy"
+                    required
+                ></textarea>
+            </div>
+            
+            <!-- Submit Button -->
+            <div class="flex justify-end">
+                <button 
+                    type="submit" 
+                    class="bg-navy hover:bg-opacity-90 text-white px-6 py-3 rounded flex items-center shadow-md"
+                >
+                    <span class="mr-2">Send Message</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </form>
+        </div>
+    </div>
+
+    <!-- Optional: Add simple JavaScript to ensure map works -->
+    <script>
+        // Check if the map iframe loaded correctly
+        document.addEventListener('DOMContentLoaded', function() {
+            const mapFrame = document.querySelector('#map iframe');
+            
+            mapFrame.addEventListener('load', function() {
+                console.log('Map loaded successfully');
+            });
+            
+            mapFrame.addEventListener('error', function() {
+                console.error('Map failed to load');
+                // Fallback message if map doesn't load
+                document.getElementById('map').innerHTML = '<div class="flex items-center justify-center h-full bg-gray-100"><p class="text-navy">Map of Ludhiana, Punjab</p></div>';
+            });
+        });
+    </script>
+<% include('./partials/footer') %>

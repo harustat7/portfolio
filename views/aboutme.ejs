@@ -1,0 +1,193 @@
+<!-- <% include('./partials/header') %>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<div class="main w-full h-screen bg-color-white">
+    <div class="nav w-full border-[1px] h-[100px] font-sans text-[#293462] flex justify-between items-center sticky top-0 z-50 bg-[#ffffff]">
+        <div class="navleft text-4xl font-lightbold ml-8">
+            <h1>Harustat Kaur</h1> 
+        </div>
+
+        <div class="navright flex w-1/2 justify-around">
+            <a href="#">ABOUT  ME</a>
+            <a href="/resume">RESUME</a>
+            <a href="/projects">PROJECTS</a>
+            <a href="/certificates">CERTIFICATES</a>
+            <a href="/contact">CONTACT</a>
+            
+        </div>
+    </div>
+
+    <div class="hero-section h-[520px] w-full bg-[#293462] text-[#293462] flex justify-center p-3">
+        <div class="hero-content h-[450px] w-1/2 flex justify-center bg-white border-[1px] mt-auto">
+            <div class="hero-left w-1/2">
+                <img  class="h-[450px]" src="/images/passport.JPG" alt="">
+            </div>
+
+            <div class="hero-right w-1/2 pt-12 flex flex-col flex-start">
+                <h2 class="text-3xl">Harustat Kaur</h2>
+                <h2 class="text-xl mb-5">FULL STACK DEVELOPER</h2>
+
+                <h1>Phone:</h1>
+                <h2 class="mb-3">7652800745</h2>
+
+                <h1>Email:</h1>
+                <h2 class="mb-3">harustatkaur10@gmail.com</h2>
+
+                <h1>Address:</h1>
+                <h2>373-R, Model Town</h2>
+                <h2 class="mb-3">Ludhiana, Punjab</h2>
+
+                <h1>Date of Birth:</h1>
+                <h2 class="mb-3">February 7th, 2004</h2>
+            </div>
+        </div>
+    </div>
+    <div class="flex justify-center">
+    <div class="contact-nav mt-2 w-1/2 h-[70px] bg-[#293462] flex items-center justify-center gap-5">
+        <a href="https://www.linkedin.com/in/harustatk07/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin text-xl text-white hover:text-blue-300 transition-colors"></i>
+        </a>
+        <a href="https://www.instagram.com/harustat._.07" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-instagram text-xl text-white hover:text-blue-300 transition-colors"></i>
+        </a>
+        <a href="https://github.com/harustat7" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github text-xl text-white hover:text-blue-300 transition-colors"></i>
+        </a>
+        <a href="https://leetcode.com/u/harustat7/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-laptop-code text-xl text-white hover:text-blue-300 transition-colors"></i>
+        </a>
+    </div>
+    </div>
+
+    <div class="about-me w-full h-[610px] bg-[#ededed] text-[#293462] p-20 pl-36 pr-36 flex flex-col items-center">
+        <h1 class="text-3xl flex justify-center font-semibold">Hello! I'm Harustat</h1>
+        <br>
+        <p class=" text-justify leading-relaxed mb-4 font-lightbold">
+            I'm a third-year Computer Engineering student at Thapar Institute of Engineering & Technology, driven by a deep passion for software development and full-stack development. My academic journey has been enriched by hands-on experience in Data Structures & Algorithms, Cyber Security, and Machine Learning, complemented by extensive work with modern web technologies.
+        </p>
+        <p class=" text-justify leading-relaxed mb-4 font-lightbold">
+            I'm proficient in programming languages including C/C++, HTML/CSS, and JavaScript, with particular focus on backend development using Node.js and Express.js. I've built robust server-side applications and RESTful APIs using the Express.js framework. My experience with MongoDB has enabled me to implement efficient database schemas and handle complex data operations. This full-stack knowledge allows me to develop complete web solutions from database design to user interface implementation.
+        </p>
+        <p class="text-justify leading-relaxed mb-4 font-lightbold">
+            Through various projects and academic coursework, I've developed a keen interest in solving complex problems and creating efficient solutions. This passion has led me to participate in hackathons organized by ACM and Amazon, where I've had the opportunity to apply my development skills in real-world scenarios. 
+            I've demonstrated strong leadership and organizational abilities as a Publicity Volunteer Member for SATURNALIA 2023. 
+            My involvement in the ATHLETICS MEET'22 further showcases my ability to contribute creative solutions and work effectively in team settings and my interest for sports.
+        </p>
+        <p class="text-justify leading-relaxed font-lightbold">
+            I pride myself on my attention to detail, collaborative spirit, and commitment to continuous learning. Whether developing full-stack applications or managing events, I bring a balanced combination of technical expertise and interpersonal skills. I am constantly seeking new opportunities to grow and contribute meaningfully to the field of computer engineering.
+        </p>
+    </div>
+</div>
+
+<% include('./partials/footer') %> -->
+
+<% include('./partials/header') %>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<div class="main w-full min-h-screen bg-white">
+    <!-- Navbar - Responsive with hamburger menu for mobile -->
+    <div class="nav w-full border-b border-gray-200 py-4 md:h-[100px] font-sans text-[#293462] flex flex-col md:flex-row justify-between items-center sticky top-0 z-50 bg-white px-4">
+        <div class="flex w-full md:w-auto justify-between items-center">
+            <div class="navleft text-2xl md:text-4xl font-semibold md:ml-4">
+                <h1>Harustat Kaur</h1> 
+            </div>
+            <button id="menuBtn" class="md:hidden text-2xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="mobileMenu" class="navright hidden md:flex flex-col md:flex-row w-full md:w-1/2 items-center gap-6 md:justify-around mt-4 md:mt-0">
+            <a href="#" class="py-2 md:py-0">ABOUT ME</a>
+            <a href="/resume" class="py-2 md:py-0">RESUME</a>
+            <a href="/projects" class="py-2 md:py-0">PROJECTS</a>
+            <a href="/certificates" class="py-2 md:py-0">CERTIFICATES</a>
+            <a href="/contact" class="py-2 md:py-0">CONTACT</a>
+        </div>
+    </div>
+
+    <!-- Hero Section - Responsive layout -->
+    <div class="hero-section w-full bg-[#293462] text-[#293462] flex justify-center p-3 py-8 md:py-12 md:h-[520px]">
+        <div class="hero-content w-full md:w-4/5 lg:w-2/3 flex flex-col md:flex-row justify-center bg-white border border-gray-200 mt-auto shadow-md">
+            <div class="hero-left w-full md:w-1/2 flex justify-center md:justify-start">
+                <img class="h-64 md:h-96 lg:h-[450px] object-cover" src="/images/passport.JPG" alt="Harustat Kaur">
+            </div>
+
+            <div class="hero-right w-full md:w-1/2 p-6 md:pt-12 flex flex-col">
+                <h2 class="text-2xl md:text-3xl">Harustat Kaur</h2>
+                <h2 class="text-lg md:text-xl mb-4">FULL STACK DEVELOPER</h2>
+
+                <div class="grid grid-cols-1 gap-1">
+                    <h1 class="font-semibold">Phone:</h1>
+                    <h2 class="mb-2">7652800745</h2>
+
+                    <h1 class="font-semibold">Email:</h1>
+                    <h2 class="mb-2">harustatkaur10@gmail.com</h2>
+
+                    <h1 class="font-semibold">Address:</h1>
+                    <h2>373-R, Model Town</h2>
+                    <h2 class="mb-2">Ludhiana, Punjab</h2>
+
+                    <h1 class="font-semibold">Date of Birth:</h1>
+                    <h2 class="mb-2">February 7th, 2004</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Social Media Links - Responsive -->
+    <div class="flex justify-center">
+        <div class="contact-nav mt-2 w-full md:w-4/5 lg:w-2/3 h-[60px] bg-[#293462] flex items-center justify-center gap-6 md:gap-10">
+            <a href="https://www.linkedin.com/in/harustatk07/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin text-xl text-white hover:text-blue-300 transition-colors"></i>
+            </a>
+            <a href="https://www.instagram.com/harustat._.07" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-instagram text-xl text-white hover:text-blue-300 transition-colors"></i>
+            </a>
+            <a href="https://github.com/harustat7" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github text-xl text-white hover:text-blue-300 transition-colors"></i>
+            </a>
+            <a href="https://leetcode.com/u/harustat7/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-laptop-code text-xl text-white hover:text-blue-300 transition-colors"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- About Me Section - Responsive text and padding -->
+    <div class="about-me w-full bg-[#ededed] text-[#293462] p-6 md:p-12 lg:p-20 flex flex-col items-center">
+        <h1 class="text-2xl md:text-3xl flex justify-center font-semibold mb-4">Hello! I'm Harustat</h1>
+        
+        <div class="w-full md:w-5/6 lg:w-3/4">
+            <p class="text-justify leading-relaxed mb-4 font-medium">
+                I'm a third-year Computer Engineering student at Thapar Institute of Engineering & Technology, driven by a deep passion for software development and full-stack development. My academic journey has been enriched by hands-on experience in Data Structures & Algorithms, Cyber Security, and Machine Learning, complemented by extensive work with modern web technologies.
+            </p>
+            <p class="text-justify leading-relaxed mb-4 font-medium">
+                I'm proficient in programming languages including C/C++, HTML/CSS, and JavaScript, with particular focus on backend development using Node.js and Express.js. I've built robust server-side applications and RESTful APIs using the Express.js framework. My experience with MongoDB has enabled me to implement efficient database schemas and handle complex data operations. This full-stack knowledge allows me to develop complete web solutions from database design to user interface implementation.
+            </p>
+            <p class="text-justify leading-relaxed mb-4 font-medium">
+                Through various projects and academic coursework, I've developed a keen interest in solving complex problems and creating efficient solutions. This passion has led me to participate in hackathons organized by ACM and Amazon, where I've had the opportunity to apply my development skills in real-world scenarios. 
+                I've demonstrated strong leadership and organizational abilities as a Publicity Volunteer Member for SATURNALIA 2023. 
+                My involvement in the ATHLETICS MEET'22 further showcases my ability to contribute creative solutions and work effectively in team settings and my interest for sports.
+            </p>
+            <p class="text-justify leading-relaxed font-medium">
+                I pride myself on my attention to detail, collaborative spirit, and commitment to continuous learning. Whether developing full-stack applications or managing events, I bring a balanced combination of technical expertise and interpersonal skills. I am constantly seeking new opportunities to grow and contribute meaningfully to the field of computer engineering.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript for mobile menu toggle -->
+<script>
+    document.getElementById('menuBtn').addEventListener('click', function() {
+        const menu = document.getElementById('mobileMenu');
+        menu.classList.toggle('hidden');
+    });
+</script>
+
+<% include('./partials/footer') %>

@@ -1,0 +1,168 @@
+<% include('./partials/header') %>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<div class="main w-full h-screen bg-white font-sans">
+    <body class="bg-gray-50">
+
+        <header class="fixed top-0 right-0 h-screen flex items-center z-50">
+            <nav class="bg-white shadow-lg rounded-l-lg py-8 px-4 flex flex-col space-y-10">
+              <!-- About -->
+              <div class="group relative flex items-center justify-center">
+                <a href="/" class="text-gray-600 hover:text-blue-600 w-10 h-10 flex items-center justify-center text-xl transition-all duration-300">
+                  <i class="fas fa-user"></i>
+                </a>
+                <span class="absolute right-full mr-3 bg-white text-gray-800 font-medium px-3 py-1 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none">
+                  About Me
+                </span>
+              </div>
+              
+              <!-- Resume -->
+              <div class="group relative flex items-center justify-center">
+                <a href="/resume" class="text-gray-600 hover:text-blue-600 w-10 h-10 flex items-center justify-center text-xl transition-all duration-300">
+                  <i class="fas fa-file-alt"></i>
+                </a>
+                <span class="absolute right-full mr-3 bg-white text-gray-800 font-medium px-3 py-1 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none">
+                  Resume
+                </span>
+              </div>
+              
+              <!-- Portfolio--active -->
+              <div class="group relative flex items-center justify-center">
+                <a href="/projects" class="text-blue-600 hover:text-blue-600 w-10 h-10 flex items-center justify-center text-xl transition-all duration-300">
+                  <i class="fas fa-briefcase"></i>
+                </a>
+                <span class="absolute right-full mr-3 bg-white text-blue-600 font-medium px-3 py-1 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none">
+                  Projects
+                </span>
+              </div>
+              
+              <!-- Certificate -->
+              <div class="group relative flex items-center justify-center">
+                <a href="/certificates" class="text-gray-600 hover:text-blue-600 w-10 h-10 flex items-center justify-center text-xl transition-all duration-300">
+                  <i class="fas fa-certificate"></i>
+                </a>
+                <span class="absolute right-full mr-3 bg-white text-gray-800 font-medium px-3 py-1 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none">
+                  Certificates
+                </span>
+              </div>
+              
+              <!-- Contact -->
+              <div class="group relative flex items-center justify-center">
+                <a href="/contact" class="text-gray-600 w-10 h-10 flex items-center justify-center text-xl transition-all duration-300">
+                  <i class="fas fa-envelope"></i>
+                </a>
+                <span class="absolute right-full mr-3 bg-white text-gray-800 font-medium px-3 py-1 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none">
+                  Contact
+                </span>
+              </div>
+            </nav>
+          </header>
+        
+    <div class="heading w-full h-[100px] text-[#293462] flex items-center justify-center border-[1px] border-gray-300">
+        <h1 class="text-3xl font-semibold tracking-wide">PROJECTS</h1>
+    </div>
+
+    <div class="container mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Project 1 -->
+            <div class="group bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer transform transition duration-300 hover:-translate-y-2 hover:shadow-xl" 
+                 onclick="window.open('https://github.com/harustat7/VisionAid-CD', '_blank')">
+                <div class="relative h-48">
+                    <img src="\images\d08918df-a4c5-4eee-9abd-fc50096e0f13.jpg" alt="Project 1" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-[#293462] bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 bg-transparent text-white py-3 px-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 flex items-center justify-center">
+                        <i class="fab fa-github mr-2"></i> View on GitHub
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2" style="color: #293462">VisionAid: AI-Powered Cataract Detection</h3>
+                    <p class="text-gray-600 text-justify">VisionAid is an AI-driven cataract detection system built using TensorFlow, designed to classify medical images into cataract and non-cataract categories. The model leverages a fine-tuned EfficientNetB0 architecture with custom layers, achieving 95% validation accuracy.</p>
+                </div>
+            </div>
+    
+            <!-- Project 2 -->
+            <div class="group bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer transform transition duration-300 hover:-translate-y-2 hover:shadow-xl" 
+                 onclick="window.open('https://github.com/harustat7/Scatch', '_blank')">
+                <div class="relative h-48">
+                    <img src="\images\b2416f2c-22e1-4da8-84f0-cec10e166d9d.jpg" alt="Project 2" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-[#293462] bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 bg-transparent text-white py-3 px-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 flex items-center justify-center">
+                        <i class="fab fa-github mr-2"></i> View on GitHub
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2" style="color: #293462">Scatch: E-commerce backend with Authentication</h3>
+                    <p class="text-gray-600">Scatch is a scalable e-commerce backend designed for seamless user and product management, built using Node.js, Express.js, and MongoDB. It supports over 100 concurrent users, improving backend performance by 40%.</p>
+                </div>
+            </div>
+    
+            <!-- Project 3 -->
+            <div class="group bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer transform transition duration-300 hover:-translate-y-2 hover:shadow-xl" 
+                 onclick="window.open('https://github.com/harustat7/webease/tree/master', '_blank')">
+                <div class="relative h-48">
+                    <img src="\images\84fecc56-599b-41c3-8d8b-b5604347aba6.jpg" alt="Project 3" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-[#293462] bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 bg-transparent text-white py-3 px-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 flex items-center justify-center">
+                        <i class="fab fa-github mr-2"></i> View on GitHub
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2" style="color: #293462">WebEase: No-Code CMS for Website Creation</h3>
+                    <p class="text-gray-600">WebEase is a no-code content management system built using the MERN stack, designed to simplify website creation and reduce development time by 50%. It features secure user authentication with role-based access control.</p>
+                </div>
+            </div>
+    
+            <!-- Project 4 -->
+            <div class="group bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer transform transition duration-300 hover:-translate-y-2 hover:shadow-xl" 
+                 onclick="window.open('https://github.com/harustat7/VisionCount', '_blank')">
+                <div class="relative h-48">
+                    <img src="\images\e2e598c3-6163-482f-84e1-cdd9896a1abb.jpg" alt="Project 4" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-[#293462] bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 bg-transparent text-white py-3 px-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 flex items-center justify-center">
+                        <i class="fab fa-github mr-2"></i> View on GitHub
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2" style="color: #293462">VisionCount: Real-Time People Tracking.</h3>
+                    <p class="text-gray-600">VisionCount is a real-time people tracking system developed using OpenCV, designed to detect, track, and count individuals with 95% accuracy. It enhances applications like crowd monitoring and security surveillance.</p>
+                </div>
+            </div>
+    
+            <!-- Project 5 -->
+            <div class="group bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer transform transition duration-300 hover:-translate-y-2 hover:shadow-xl" 
+                 onclick="window.open('https://github.com/harustat7/golf-web', '_blank')">
+                <div class="relative h-48">
+                    <img src="\images\07566c55-e982-42ba-9874-2307c2bea959.jpg" alt="Project 5" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-[#293462] bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 bg-transparent text-white py-3 px-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 flex items-center justify-center">
+                        <i class="fab fa-github mr-2"></i> View on GitHub
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2" style="color: #293462">Family Golf Website</h3>
+                    <p class="text-gray-600">The Family Golf Website is an interactive platform built using HTML, CSS, and JavaScript, designed to enhance user engagement and improve accessibility. Through responsive design and intuitive navigation.</p>
+                </div>
+            </div>
+    
+            <!-- Project 6 -->
+            <div class="group bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer transform transition duration-300 hover:-translate-y-2 hover:shadow-xl" 
+                 onclick="window.open('https://github.com/harustat7/amazon-clone/tree/main', '_blank')">
+                <div class="relative h-48">
+                    <img src="\images\a55852d3-99e3-409f-aa9f-0baf6aac1448.jpg" alt="Project 6" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-[#293462] bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 bg-transparent text-white py-3 px-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 flex items-center justify-center">
+                        <i class="fab fa-github mr-2"></i> View on GitHub
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2" style="color: #293462">Amazon Clone</h3>
+                    <p class="text-gray-600">The Amazon Clone is a front-end replica of the Amazon e-commerce platform, built using HTML and CSS to enhance web development skills. It features over 20 product listing pages with accurate layout.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%include('./partials/footer') %>

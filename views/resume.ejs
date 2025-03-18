@@ -1,0 +1,171 @@
+<% include('./partials/header') %>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<div class="main w-full h-screen bg-white font-sans">
+  <body class="bg-gray-50">
+
+    <header class="fixed top-0 right-0 h-screen flex items-center z-50">
+        <nav class="bg-white shadow-lg rounded-l-lg py-8 px-4 flex flex-col space-y-10">
+          <!-- About -->
+          <div class="group relative flex items-center justify-center">
+            <a href="/" class="text-gray-600 hover:text-blue-600 w-10 h-10 flex items-center justify-center text-xl transition-all duration-300">
+              <i class="fas fa-user"></i>
+            </a>
+            <span class="absolute right-full mr-3 bg-white text-gray-800 font-medium px-3 py-1 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none">
+              About Me
+            </span>
+          </div>
+          
+          <!-- Resume -->
+          <div class="group relative flex items-center justify-center">
+            <a href="/resume" class="text-blue-600 w-10 h-10 flex items-center justify-center text-xl transition-all duration-300">
+              <i class="fas fa-file-alt"></i>
+            </a>
+            <span class="absolute right-full mr-3 bg-white text-blue-600 font-medium px-3 py-1 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none">
+              Resume
+            </span>
+          </div>
+          
+          <!-- Portfolio -->
+          <div class="group relative flex items-center justify-center">
+            <a href="/projects" class="text-gray-600 hover:text-blue-600 w-10 h-10 flex items-center justify-center text-xl transition-all duration-300">
+              <i class="fas fa-briefcase"></i>
+            </a>
+            <span class="absolute right-full mr-3 bg-white text-gray-800 font-medium px-3 py-1 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none">
+              Projects
+            </span>
+          </div>
+          
+          <!-- Certificate -->
+          <div class="group relative flex items-center justify-center">
+            <a href="/certificates" class="text-gray-600 w-10 h-10 flex items-center justify-center text-xl transition-all duration-300">
+              <i class="fas fa-certificate"></i>
+            </a>
+            <span class="absolute right-full mr-3 bg-white text-gray-800 font-medium px-3 py-1 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none">
+              Certificates
+            </span>
+          </div>
+          
+          <!-- Contact -->
+          <div class="group relative flex items-center justify-center">
+            <a href="/contact" class="text-gray-600 hover:text-blue-600 w-10 h-10 flex items-center justify-center text-xl transition-all duration-300">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <span class="absolute right-full mr-3 bg-white text-gray-800 font-medium px-3 py-1 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none">
+              Contact
+            </span>
+          </div>
+        </nav>
+      </header>
+    
+    <div class="heading w-full h-[100px] text-[#293462] flex items-center justify-center border-[1px] border-gray-300">
+        <h1 class="text-3xl font-semibold tracking-wide">EDUCATION</h1>
+    </div>
+      
+      <div class="timeline relative w-full max-w-4xl mx-auto pb-5">
+        <div class="line absolute left-1/2 transform -translate-x-1/2 h-full border-r-2 border-gray-300"></div>
+  
+        <div class="item 1 flex items-center mb-10">
+          <div class="w-1/2 text-right pr-8">
+            <h2 class="text-lg font-bold text-blue-900">2022-Present</h2>
+            <h3 class="text-md text-gray-600">Bachelor's Degree</h3>
+          </div>
+          <div class="relative">
+            <div class="bullet w-4 h-4 bg-blue-900 rounded-full border-4 border-white"></div>
+          </div>
+          <div class="w-1/2 pl-8">
+            <h2 class="text-lg font-bold text-blue-900">Thapar Institute Of Engineering & Technology, Patiala</h2>
+            <p class="text-gray-600 font-semibold text-lg">
+               B.E. Computer Engineering
+            </p>
+            <p class="text-gray-600 ">
+                I have developed a strong foundation in programming, software development, and core engineering concepts. My journey at Thapar has been transformative, offering me a blend of rigorous academics, hands-on project work, and exposure to the latest technologies.
+            </p>
+          </div>
+        </div>
+  
+        <div class=" item2 flex items-center mb-10">
+          <div class="w-1/2 text-right pr-8">
+            <h2 class="text-lg font-bold text-blue-900">2021-2022</h2>
+            <h3 class="text-md text-gray-600">High School</h3>
+          </div>
+          <div class="relative">
+            <div class="bullet w-4 h-4 bg-blue-900 rounded-full border-4 border-white"></div>
+          </div>
+          <div class="w-1/2 pl-8">
+            <h2 class="text-lg font-bold text-blue-900">Sacred Heart Convent School, Ludhiana</h2>
+            <p class="text-gray-600">
+                I pursued my 12th Grade, specializing in the Science stream with a focus on Physics, Chemistry, and Mathematics. These two years were instrumental in shaping my career aspirations and building a solid foundation in analytical and technical concepts. 
+            </p>
+          </div>
+        </div>
+  
+        <div class="item3 flex items-center mb-5">
+          <div class="w-1/2 text-right pr-8">
+            <h2 class="text-lg font-bold text-blue-900">2019-2020</h2>
+            <h3 class="text-md text-gray-600">Secondary School</h3>
+          </div>
+          <div class="relative">
+            <div class="bullet w-4 h-4 bg-blue-900 rounded-full border-4 border-white"></div>
+          </div>
+          <div class="w-1/2 pl-8">
+            <h2 class="text-lg font-bold text-blue-900">Sacred Heart Convent School, Ludhiana</h2>
+            <p class="text-gray-600">
+                I completed my 10th-grade, where I developed a strong academic foundation and a disciplined approach to learning. The school provided a nurturing environment that emphasized not only academics but also moral values.I excelled in subjects like Mathematics and Science, which sparked my interest in problem-solving and logical thinking.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    <div class="heading w-full h-[100px] text-[#293462] flex items-center justify-center border-[1px] border-gray-300">
+        <h1 class="text-3xl font-semibold tracking-wide">EXPERIENCE</h1>
+    </div>
+      
+    <div class="timeline relative w-full max-w-4xl mx-auto pb-5">
+        <div class="line absolute left-1/2 transform -translate-x-1/2 h-full border-r-2 border-gray-300"></div>
+  
+        <div class="item 1 flex items-center mb-10">
+          <div class="w-1/2 text-right pr-8">
+            <h2 class="text-lg font-bold text-blue-900">2023-2024</h2>
+            <h3 class="text-md text-gray-600">Publicity Volunteer Member</h3>
+          </div>
+          <div class="relative">
+            <div class="bullet w-4 h-4 bg-blue-900 rounded-full border-4 border-white"></div>
+          </div>
+          <div class="w-1/2 pl-8">
+            <h2 class="text-lg font-bold text-blue-900">SATURNALIA, TIET </h2>
+            <p class="text-gray-600 ">
+                Collaborated with 15 event organizers and 25 volunteers to ensure the timely delivery of 
+                design deliverables for the UI/UX Case Study Event - HARMONY.
+            </p>
+          </div>
+        </div>
+  
+        <div class=" item2 flex items-center mb-10">
+          <div class="w-1/2 text-right pr-8">
+            <h2 class="text-lg font-bold text-blue-900">2020-2022</h2>
+            <h3 class="text-md text-gray-600">Sports Team Member</h3>
+          </div>
+          <div class="relative">
+            <div class="bullet w-4 h-4 bg-blue-900 rounded-full border-4 border-white"></div>
+          </div>
+          <div class="w-1/2 pl-8">
+            <h2 class="text-lg font-bold text-blue-900">ATHLETICS MEET, SHCS</h2>
+            <p class="text-gray-600">
+                Contributed 10+ creative ideas and executed 5+ design projects in alignment with the 
+                event’s theme, enhancing visual appeal and participant engagement
+            </p>
+          </div>
+        </div>
+    </div>
+
+<div class="p-12">
+<a href="documents/resume.pdf" class=" bottom-4 left-4 bg-[#293462] text-white font-medium text-lg py-4 px-6 rounded-lg shadow-lg hover:bg-[#1f2b5c] transition">
+    Download CV
+</a>
+</div>
+</div>
+
+<% include('./partials/footer') %>
