@@ -2,19 +2,21 @@
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<div class="main w-full h-screen bg-white font-sans">
+<div class="main w-full min-h-screen bg-white font-sans">
     <body class="bg-gray-50">
 
-        <header class="fixed top-0 right-0 h-screen flex items-center z-50">
-            <nav class="bg-white shadow-lg rounded-l-lg py-8 px-4 flex flex-col space-y-10">
+        <!-- Responsive navigation - vertical on desktop, horizontal on mobile -->
+        <header class="fixed md:top-0 bottom-0 md:right-0 right-0 md:h-screen md:flex md:items-center z-50">
+            <nav class="bg-white shadow-lg md:rounded-l-lg md:py-8 md:px-4 py-3 px-2 flex md:flex-col flex-row md:space-y-10 space-y-0 space-x-4 md:space-x-0 justify-around">
               <!-- About -->
               <div class="group relative flex items-center justify-center">
                 <a href="/" class="text-gray-600 hover:text-blue-600 w-10 h-10 flex items-center justify-center text-xl transition-all duration-300">
                   <i class="fas fa-user"></i>
                 </a>
-                <span class="absolute right-full mr-3 bg-white text-gray-800 font-medium px-3 py-1 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none">
+                <span class="absolute md:right-full md:left-auto left-1/2 md:mr-3 md:mt-0 -mt-12 -translate-x-1/2 md:translate-x-0 bg-white text-gray-800 font-medium px-3 py-1 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none">
                   About Me
                 </span>
               </div>
@@ -24,7 +26,7 @@
                 <a href="/resume" class="text-gray-600 hover:text-blue-600 w-10 h-10 flex items-center justify-center text-xl transition-all duration-300">
                   <i class="fas fa-file-alt"></i>
                 </a>
-                <span class="absolute right-full mr-3 bg-white text-gray-800 font-medium px-3 py-1 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none">
+                <span class="absolute md:right-full md:left-auto left-1/2 md:mr-3 md:mt-0 -mt-12 -translate-x-1/2 md:translate-x-0 bg-white text-gray-800 font-medium px-3 py-1 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none">
                   Resume
                 </span>
               </div>
@@ -34,7 +36,7 @@
                 <a href="/projects" class="text-blue-600 hover:text-blue-600 w-10 h-10 flex items-center justify-center text-xl transition-all duration-300">
                   <i class="fas fa-briefcase"></i>
                 </a>
-                <span class="absolute right-full mr-3 bg-white text-blue-600 font-medium px-3 py-1 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none">
+                <span class="absolute md:right-full md:left-auto left-1/2 md:mr-3 md:mt-0 -mt-12 -translate-x-1/2 md:translate-x-0 bg-white text-blue-600 font-medium px-3 py-1 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none">
                   Projects
                 </span>
               </div>
@@ -44,7 +46,7 @@
                 <a href="/certificates" class="text-gray-600 hover:text-blue-600 w-10 h-10 flex items-center justify-center text-xl transition-all duration-300">
                   <i class="fas fa-certificate"></i>
                 </a>
-                <span class="absolute right-full mr-3 bg-white text-gray-800 font-medium px-3 py-1 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none">
+                <span class="absolute md:right-full md:left-auto left-1/2 md:mr-3 md:mt-0 -mt-12 -translate-x-1/2 md:translate-x-0 bg-white text-gray-800 font-medium px-3 py-1 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none">
                   Certificates
                 </span>
               </div>
@@ -54,7 +56,7 @@
                 <a href="/contact" class="text-gray-600 w-10 h-10 flex items-center justify-center text-xl transition-all duration-300">
                   <i class="fas fa-envelope"></i>
                 </a>
-                <span class="absolute right-full mr-3 bg-white text-gray-800 font-medium px-3 py-1 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none">
+                <span class="absolute md:right-full md:left-auto left-1/2 md:mr-3 md:mt-0 -mt-12 -translate-x-1/2 md:translate-x-0 bg-white text-gray-800 font-medium px-3 py-1 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none">
                   Contact
                 </span>
               </div>
@@ -65,7 +67,7 @@
         <h1 class="text-3xl font-semibold tracking-wide">PROJECTS</h1>
     </div>
 
-    <div class="container mx-auto px-4 py-8">
+    <div class="container mx-auto px-4 py-8 pb-24 md:pb-8">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Project 1 -->
             <div class="group bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer transform transition duration-300 hover:-translate-y-2 hover:shadow-xl" 
